@@ -1,0 +1,15 @@
+C:\Users\Ирина\Desktop\NewWork\newWork1\bin\Debug\net6.0\newWork1.exe
+C:\Users\Ирина\Desktop\NewWork\newWork1\bin\Debug\net6.0\newWork1.deps.json
+C:\Users\Ирина\Desktop\NewWork\newWork1\bin\Debug\net6.0\newWork1.runtimeconfig.json
+C:\Users\Ирина\Desktop\NewWork\newWork1\bin\Debug\net6.0\newWork1.dll
+C:\Users\Ирина\Desktop\NewWork\newWork1\bin\Debug\net6.0\newWork1.pdb
+C:\Users\Ирина\Desktop\NewWork\newWork1\obj\Debug\net6.0\newWork1.csproj.AssemblyReference.cache
+C:\Users\Ирина\Desktop\NewWork\newWork1\obj\Debug\net6.0\newWork1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ирина\Desktop\NewWork\newWork1\obj\Debug\net6.0\newWork1.AssemblyInfoInputs.cache
+C:\Users\Ирина\Desktop\NewWork\newWork1\obj\Debug\net6.0\newWork1.AssemblyInfo.cs
+C:\Users\Ирина\Desktop\NewWork\newWork1\obj\Debug\net6.0\newWork1.csproj.CoreCompileInputs.cache
+C:\Users\Ирина\Desktop\NewWork\newWork1\obj\Debug\net6.0\newWork1.dll
+C:\Users\Ирина\Desktop\NewWork\newWork1\obj\Debug\net6.0\refint\newWork1.dll
+C:\Users\Ирина\Desktop\NewWork\newWork1\obj\Debug\net6.0\newWork1.pdb
+C:\Users\Ирина\Desktop\NewWork\newWork1\obj\Debug\net6.0\newWork1.genruntimeconfig.cache
+C:\Users\Ирина\Desktop\NewWork\newWork1\obj\Debug\net6.0\ref\newWork1.dll
