@@ -97,10 +97,11 @@ Console.WriteLine($"Summ of elements on odd positions is {summ}");
 double [] CreateNewArray (int size_array, int min, int max)
 {
     double [] array = new double [size_array];
-    Random rand = new Random();
+    
     for (int i = 0; i < size_array; i++)
     {
-        array[i] = rand.Next(min, max + 1) + Math.Round(rand.NextDouble(), 3);
+        array[i] = Math.Round ((new Random().Next(min, max)) + (new Random().NextDouble()), 3);
+       
     }
     return array;
 }
