@@ -11,9 +11,9 @@
     Console.Write("Input count of columns: ");
     int columns = Convert.ToInt32(Console.ReadLine());
     Console.Write("Input min possible value: ");
-    int min = Convert.ToInt32(Console.ReadLine());
+    int minVal = Convert.ToInt32(Console.ReadLine());
     Console.Write("Input max possible value: ");
-    int max = Convert.ToInt32(Console.ReadLine());
+    int maxVal = Convert.ToInt32(Console.ReadLine());
 
     int [,] createdArray = new int[rows, columns];
 
@@ -21,7 +21,7 @@
     {
         for (int j = 0; j < columns; j++)
         {
-            createdArray[i,j] = new Random().Next(min, max + 1);
+            createdArray[i,j] = new Random().Next(minVal, maxVal + 1);
         }
     }
     return createdArray;
@@ -37,11 +37,13 @@ void Show2dArray(int [,] array)
         }
         Console.WriteLine();
     }
+    Console.WriteLine();
 }
 
 int [,] newArray = Create2dArray();
 Show2dArray(newArray);
 */
+
 /*Задайте двумерный массив размера m на n, каждый элемент в массиве находится по формуле: Aₘₙ = m+n. 
 Выведите полученный массив на экран.
 m = 3, n = 4.
@@ -80,43 +82,43 @@ void Show2dArray(int [,] array)
     }
 }
 
-int [,] fillArray = Fill2dArray();
-Show2dArray(fillArray);
+int [,] filledArray = Fill2dArray();
+Show2dArray(filledArray);
 */
 
 //Задайте двумерный массив. Найдите элементы, у которых оба индекса чётные, 
 //и замените эти элементы на их квадраты.
 
+//  в тетраде для int 
 
-
-double[,] ChangeArray(int row, int column, int min, int max)
+double[,] Create2DArray(int row, int column, int min, int max)
 {
-    double [,] changeArray = new double[row, column];
+    double [,] create2dArray = new double[row, column];
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < column; j++)
         {
-            changeArray[i,j] = Math.Round((new Random().Next(min, max+1)) + (new Random().NextDouble), 2) ;
+            create2dArray[i,j] = Math.Round((new Random().Next(min, max)) + (new Random().NextDouble()), 2);
         }
     }
-    return changeArray;
+    return create2dArray;
 
 }
 
-int[,] change2dArray(int [,]array)
+double[,] Change2dArray(double [,]array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
             if(i %2 != 1 && j % 2 != 1)
-                array [i,j] *=  Math.Round(Math.Pow(array [i,j], 2));
+                array [i,j] *=  Math.Round(Math.Pow(array [i,j], 2), 2); // array [i,j] *= array [i,j] 
         }
     }
     return array;
 }
 
-void Show2dArray(int [,] array)
+void Show2dArray(double [,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -126,6 +128,7 @@ void Show2dArray(int [,] array)
         }
         Console.WriteLine();
     }
+    Console.WriteLine();
 }
 
 
@@ -139,7 +142,7 @@ int min = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input max possible value: ");
 int max = Convert.ToInt32(Console.ReadLine());
 
-int [,] createArray = ChangeArray(rows, columns, min, max);
+double [,] createArray = Create2DArray(rows, columns, min, max);
 Show2dArray(createArray);
-change2dArray(createArray);
+Change2dArray(createArray);
 Show2dArray(createArray);
